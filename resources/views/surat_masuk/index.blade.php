@@ -298,6 +298,7 @@
                   <th style="text-align: center; vertical-align: middle;">No. Surat</th>
                   <th style="text-align: center; vertical-align: middle;">Tanggal Diterima</th>
                   <th style="text-align: center; vertical-align: middle;">Disposisi Jabatan</th>
+                  <th style="text-align: center; vertical-align: middle;">Assign Tugas</th>
                   <th style="text-align: center; vertical-align: middle;">Instansi</th>
                   <th style="text-align: center; vertical-align: middle;">Perihal</th>
                   <th style="text-align: center; vertical-align: middle;">Status</th>
@@ -333,6 +334,28 @@
                                 @endif
                             @endforeach
                         </td>
+                        <td>
+                            @php
+                                $pegawaiDisposisi = \App\Models\DisposisiPegawai::where('id_surat',$item->id)->get(); 
+                            @endphp
+                            @foreach ($pegawaiDisposisi as $pd)
+                                @if (count($pegawaiDisposisi) > 1)
+                                    <ul>
+                                        <li>
+                                            @php
+                                                $pegawaiNama = \App\Models\User::where('id',$pd->id_pegawai)->first(); 
+                                            @endphp
+
+                                            {{ $pegawaiNama->name ?? '-' }}
+                                        </li>
+                                    </ul>
+                                @else
+                                    {{ $pegawaiNama->name ?? '-' }}
+                                @endif
+
+                            @endforeach
+                        </td>
+
                         <td>{{ $item->instansi_pengirim }}</td>
                         <td>{{ $item->perihal }}</td>
                         <td >
@@ -1096,6 +1119,7 @@
 {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> --}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="{{ asset('plugins/select2/js/select2.full.min.js') }}"></script>
+
 <script>
     function showInput() {
         var selectBox = $('.intruksi').val();

@@ -390,6 +390,14 @@
                             </td>
                         @endfor
                     </tr>
+                    <tr>
+                        @for ($i = 4; $i < 9; $i += 4)
+                            <td class="instruction-column">
+                                <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"> <i class="fa fa-check" style="display : {{ in_array($intruksi[$i],$arr_in) ? '' : 'none' }}"></i> </div>
+                                {{ $intruksi[$i] }}
+                            </td>
+                        @endfor
+                    </tr>
                 </table>
             <br>
         </div>

@@ -21,7 +21,7 @@
       body {
         background-image: url('{{ asset('img/loginv3.png') }}');
         background-size: cover;
-        background-position: center center;
+        background-position: center right;
       }
     
       .form-control:focus{
@@ -37,18 +37,8 @@
         font-family: 'Times New Roman';
       }
 
-      @media (max-width: 700px) {
-        body {
-              background-image: none; 
-              background-color: #A40202; /* Set background color for mobile screens */
-        }
-          
-        .login {
-              background-image: url('{{ asset('img/loginv3.png') }}'); /* Add background image only to login section */
-              background-size: cover;
-              background-position: center right; /* Position the background image to the right */
-        }
-      }
+      
+
     </style>
   </head>
   <body>

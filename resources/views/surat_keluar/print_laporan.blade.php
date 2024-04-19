@@ -79,14 +79,14 @@
         <th  class="huruf">Tanggal Surat</th>
         <th  class="huruf">No. Surat</th>
         <th  class="huruf">Perihal</th>
-        <th  class="huruf">Kepada</th>
+        <th  class="huruf">Assign Tugas</th>
       </tr>
     </thead>
     <tbody>
       @foreach ($surat_keluar as $item)
           <tr>
-              <td style="text-align: center;border: 1px solid black">{{ $loop->iteration }}</td>
-              <td> {{ \Carbon\Carbon::parse($item->tgl_surat)->translatedFormat('d F Y') }}</td>
+              <td style="text-align: center;border: 1px solid black; font-size: 12px">{{ $loop->iteration }}</td>
+              <td class="isi"> {{ \Carbon\Carbon::parse($item->tgl_surat)->translatedFormat('d F Y') }}</td>
               <td  class="isi">{{ $item->no_surat }}</td>
               <td class="isi">{{ $item->judul }}</td>
               <td class="isi">

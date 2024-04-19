@@ -79,7 +79,8 @@
         <th  class="huruf">No.</th>
         <th  class="huruf">No. Surat</th>
         <th  class="huruf">Tanggal Diterima</th>
-        <th  class="huruf">Disposisi Jabatan</th>
+        {{-- <th  class="huruf">Disposisi Jabatan</th>
+        <th  class="huruf">Assign Tugas</th> --}}
         <th  class="huruf">Instansi</th>
         <th  class="huruf">Perihal</th>
         <th  class="huruf">Status Surat</th>
@@ -91,7 +92,7 @@
               <td  style="text-align: center;border: 1px solid black;  font-size:12px;">{{ $loop->iteration }}</td>
               <td  class="isi">{{ $item->no_surat }}</td>
               <td  class="isi"> {{ \Carbon\Carbon::parse($item->diterima_tgl)->translatedFormat('d F Y') }}</td>
-              <td  class="isi">
+              {{-- <td  class="isi">
                 @php
                     $arrayDisposisiJabatan2 = explode(',', trim($item->disposisi_jabatan, '[]'));
                 @endphp
@@ -111,7 +112,28 @@
                         {{ $jabatan }}
                     @endif
                 @endforeach
-              </td>
+              </td> --}}
+              {{-- <td>
+                @php
+                    $pegawaiDisposisi = \App\Models\DisposisiPegawai::where('id_surat',$item->id)->get(); 
+                @endphp
+                @foreach ($pegawaiDisposisi as $pd)
+                    @if (count($pegawaiDisposisi) > 1)
+                        <ul>
+                            <li>
+                                @php
+                                    $pegawaiNama = \App\Models\User::where('id',$pd->id_pegawai)->first(); 
+                                @endphp
+
+                                {{ $pegawaiNama->name ?? '-' }}
+                            </li>
+                        </ul>
+                    @else
+                        {{ $pegawaiNama->name ?? '-' }}
+                    @endif
+
+                @endforeach
+            </td> --}}
               <td  class="isi">{{ $item->instansi_pengirim }}</td>
               <td  class="isi">{{ $item->perihal }}</td>
               <td  class="isi">

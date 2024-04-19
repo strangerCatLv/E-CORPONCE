@@ -104,7 +104,6 @@
                                     <span class="badge bg-success text-light">{{ $jabatan }}</span>
                                 @endif
                             @endforeach
-
                         </td>
                         <td>{{ $item->instansi_pengirim }}</td>
                         <td>{{ $item->perihal }}</td>
@@ -312,17 +311,15 @@
                                                             <tr>
                                                                 <td>Disposisi Jabatan</td>
                                                                 <td>
-                                                                        {{-- {{ $item->disposisi_jabatan }} --}}
-
                                                                     @php
                                                                         $arrayDisposisiJabatan2 = explode(',', trim($item->disposisi_jabatan, '[]'));
                                                                     @endphp
-
+                                        
                                                                     @foreach ($arrayDisposisiJabatan2 as $dj)
                                                                         @php
                                                                         $jabatan = str_replace(['\\', '"'], '', trim($dj)) ?? '-';
                                                                         @endphp
-
+                                        
                                                                         @if (count($arrayDisposisiJabatan2) > 1)
                                                                             <ul>
                                                                                 <li>

@@ -107,7 +107,8 @@
                 <th style="vertical-align: middle; text-align:center;">No.</th>
                 <th style="vertical-align: middle; text-align:center;">No. SUrat</th>
                 <th style="vertical-align: middle; text-align:center;">Tanggal Diterima</th>
-                <th style="vertical-align: middle; text-align:center;">Disposisi Jabatan</th>
+                {{-- <th style="vertical-align: middle; text-align:center;">Disposisi Jabatan</th>
+                <th style="vertical-align: middle; text-align:center;">Assign Tugas</th> --}}
                 <th style="vertical-align: middle; text-align:center;">Instansi</th>
                 <th style="vertical-align: middle; text-align:center;">Perihal</th>
                 <th style="vertical-align: middle; text-align:center;">Status</th>
@@ -119,7 +120,7 @@
                       <td style="text-align: center">{{ $loop->iteration }}</td>
                       <td>{{ $item->no_surat }}</td>
                       <td> {{ \Carbon\Carbon::parse($item->diterima_tgl)->translatedFormat('d F Y') }}</td>
-                      <td>
+                      {{-- <td>
                         @php
                             $arrayDisposisiJabatan2 = explode(',', trim($item->disposisi_jabatan, '[]'));
                         @endphp
@@ -139,7 +140,28 @@
                                 <span class="">{{ $jabatan }}</span>
                             @endif
                         @endforeach
-                      </td>
+                      </td> --}}
+                      {{-- <td>
+                        @php
+                            $pegawaiDisposisi = \App\Models\DisposisiPegawai::where('id_surat',$item->id)->get(); 
+                        @endphp
+                        @foreach ($pegawaiDisposisi as $pd)
+                            @if (count($pegawaiDisposisi) > 1)
+                                <ul>
+                                    <li>
+                                        @php
+                                            $pegawaiNama = \App\Models\User::where('id',$pd->id_pegawai)->first(); 
+                                        @endphp
+
+                                        {{ $pegawaiNama->name ?? '-' }}
+                                    </li>
+                                </ul>
+                            @else
+                                {{ $pegawaiNama->name ?? '-' }}
+                            @endif
+
+                        @endforeach
+                    </td> --}}
                       <td>{{ $item->instansi_pengirim }}</td>
                       <td>{{ $item->perihal }}</td>
                       <td>

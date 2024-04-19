@@ -109,7 +109,7 @@
               <th style="vertical-align: middle; text-align:center;">Tanggal Surat</th>
               <th style="vertical-align: middle; text-align:center;">No. Surat</th>
               <th style="vertical-align: middle; text-align:center;">Perihal</th>
-              <th style="vertical-align: middle; text-align:center;">Kepada</th>
+              <th style="vertical-align: middle; text-align:center;">Assign Tugas</th>
             </tr>
           </thead>
           <tbody>

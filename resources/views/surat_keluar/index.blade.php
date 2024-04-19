@@ -128,6 +128,7 @@
                 <th style="text-align: center">Tanggal Surat</th>
                 <th style="text-align: center">No. Surat</th>
                 <th style="text-align: center">Perihal</th>
+                <th style="text-align: center">Assign Tugas</th>
                 <th style="text-align: center">Aksi</th>
               </tr>
             </thead>
@@ -139,6 +140,29 @@
                       <td>{{ $item->no_surat }}</td>
                       <td>{{ $item->judul }}</td>
                       {{-- <td>{{ $item->kepada }}</td> --}}
+                      <td>
+                        @php
+                              if (Auth::user()->tipe == 'Pegawai') {
+                                  $assign_tugas = App\Models\AssignTugas::where('id_surat_keluar',$item->id)->where('id_pegawai',Auth::user()->id)->orderBy('created_at','desc')->get()->unique('id_pegawai');
+                              }else{
+                                  $assign_tugas = App\Models\AssignTugas::where('id_surat_keluar',$item->id)->orderBy('created_at','desc')->get()->unique('id_pegawai');
+                              }
+                        @endphp 
+                          @foreach ($assign_tugas as $itemassign)
+                          @php
+                              $user = \App\Models\User::where('id',$itemassign->id_pegawai)->first();
+                          @endphp
+                            @if (count($assign_tugas) > 1)
+                                <ul>
+                                    <li>
+                                      {{ $user->name }}
+                                    </li>
+                                </ul>
+                            @else
+                                {{ $user->name }}
+                            @endif
+                          @endforeach
+                      </td>
                      
                       <td>
                           <div class="btn-group">
