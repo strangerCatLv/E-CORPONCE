@@ -561,7 +561,7 @@
                                                                 <td>File</td>
                                                                 <td>
                                                                     <div class="button-group">
-                                                                        {{-- <a href="{{ asset('documents/document-surat/'.$item->file) }}" target="_blank" class="btn btn-primary">  <i class="fas fa-eye"></i> Priview</a> --}}
+                                                                        <a href="{{ asset('documents/document-surat/'.$item->file) }}" target="_blank" class="btn btn-primary">  <i class="fas fa-eye"></i> Priview</a>
                                                                         <a href="{{ asset('documents/document-surat/'.$item->file) }}" download class="btn btn-primary">  <i class="fas fa-cloud-download-alt"></i> Download</a>
                                                                     </div>
                                                                 </td>
@@ -821,20 +821,15 @@
                                                                         "Wakasek Bidang Sarana Prasarana",
                                                                         "Wakasek Bidang Hub. DU/DI",
                                                                         "Bidang Kurikulum",
+                                                                        "Ketua PKG",
                                                                         "Bursa Kerja Khusus (BKK)",
                                                                         "Bidang PKL/Magang",
-                                                                        "Staf Bidang Tertentu",
-                                                                        "Koordinator Bidang Tertentu",
-                                                                        "Kepala Kompetensi Keahlian",
                                                                         "Bidang Kesiswaan",
+                                                                        "Bidang Mutu",
+                                                                        "Bidang Persuratan",
                                                                         "Bidang Sarana Prasarana",
+                                                                        "Kepala Konsentrasi Keahlian",
                                                                         "Arsiparis Ahli Muda",
-                                                                        "Pengadministrasi Kepegawaian",
-                                                                        "Pengadministrasi Keuangan",
-                                                                        "Pengadministrasi Kesiswaan",
-                                                                        "Pengadministrasi Kurikulum",
-                                                                        "Pengadministrasi Hub. DU/Di",
-                                                                        "Pengadministrasi Persuratan",
                                                                         "Pengadministrasi Perpustakaan",
                                                                         "Pengelola Data/Operator DAPODIK",
                                                                         "Sarana Prasarana",
@@ -1025,20 +1020,15 @@
                                                                         "Wakasek Bidang Sarana Prasarana",
                                                                         "Wakasek Bidang Hub. DU/DI",
                                                                         "Bidang Kurikulum",
+                                                                        "Ketua PKG",
                                                                         "Bursa Kerja Khusus (BKK)",
                                                                         "Bidang PKL/Magang",
-                                                                        "Staf Bidang Tertentu",
-                                                                        "Koordinator Bidang Tertentu",
-                                                                        "Kepala Kompetensi Keahlian",
                                                                         "Bidang Kesiswaan",
+                                                                        "Bidang Mutu",
+                                                                        "Bidang Persuratan",
                                                                         "Bidang Sarana Prasarana",
+                                                                        "Kepala Konsentrasi Keahlian",
                                                                         "Arsiparis Ahli Muda",
-                                                                        "Pengadministrasi Kepegawaian",
-                                                                        "Pengadministrasi Keuangan",
-                                                                        "Pengadministrasi Kesiswaan",
-                                                                        "Pengadministrasi Kurikulum",
-                                                                        "Pengadministrasi Hub. DU/Di",
-                                                                        "Pengadministrasi Persuratan",
                                                                         "Pengadministrasi Perpustakaan",
                                                                         "Pengelola Data/Operator DAPODIK",
                                                                         "Sarana Prasarana",

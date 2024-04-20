@@ -25,6 +25,14 @@
             font-size: 19px;
         }
         @page { size: auto;  margin: 0mm; }
+
+        .text {
+            font-size:5px!important;border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px;
+        }
+
+        .text2 {
+            border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px;
+        }
         
     </style>
   </head>
@@ -140,41 +148,41 @@
 
                         <td style="width: 60%">
                             1. Arsiparis Ahli Muda
-                            <div style="font-size:5px!important;border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"> <i class="fa fa-check" style="display : {{ in_array('Arsiparis Ahli Muda',$arrayDisJab) ? '' : 'none' }}" </div>
+                            <div class="text"> <i class="fa fa-check" style="display : {{ in_array('Arsiparis Ahli Muda',$arrayDisJab) ? '' : 'none' }}" </div>
                         </td>
                         <td>
                             5. Wakasek Bidang Hub. DU/DI
-                            <div style="font-size:5px!important;border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"> <i class="fa fa-check" style="display : {{ in_array('Wakasek Bidang Hub. DU/DI',$arrayDisJab) ? '' : 'none' }}" </div>
+                            <div class="text"> <i class="fa fa-check" style="display : {{ in_array('Wakasek Bidang Hub. DU/DI',$arrayDisJab) ? '' : 'none' }}" </div>
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 60%">
                             2. Ketua Tim Penjamin Mutu Pendidikan Sekolah
-                            <div style="font-size:5px!important;border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"> <i class="fa fa-check" style="display : {{ in_array('Ketua Tim Penjamin Mutu Pendidikan Sekolah (TPMPS)',$arrayDisJab) ? '' : 'none' }}" </div>
+                            <div class="text"> <i class="fa fa-check" style="display : {{ in_array('Ketua Tim Penjamin Mutu Pendidikan Sekolah (TPMPS)',$arrayDisJab) ? '' : 'none' }}" </div>
                         </td>
                         <td>
                             6. Wakasek Bidang Sarana Prasarana
-                            <div style="font-size:5px!important;border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"> <i class="fa fa-check" style="display : {{ in_array('Wakasek Bidang Sarana Prasarana',$arrayDisJab) ? '' : 'none' }}" </div>
+                            <div class="text"> <i class="fa fa-check" style="display : {{ in_array('Wakasek Bidang Sarana Prasarana',$arrayDisJab) ? '' : 'none' }}" </div>
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 60%">
                             3. Wakasek Bidang Akademik
-                            <div style="font-size:5px!important;border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"> <i class="fa fa-check" style="display : {{ in_array('Wakasek Bidang Akademik',$arrayDisJab) ? '' : 'none' }}" </div>
+                            <div class="text"> <i class="fa fa-check" style="display : {{ in_array('Wakasek Bidang Akademik',$arrayDisJab) ? '' : 'none' }}" </div>
                         </td>
                         <td>
                             7. Bendahara............
-                            <div style="font-size:5px!important;border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"></div>
+                            <div class="text"></div>
                         </td>
                     </tr>
                     <tr>
                         <td style="width: 60%">
                             4. Wakasek Bidang Kesiswaan
-                            <div style="font-size:5px!important;border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"> <i class="fa fa-check" style="display : {{ in_array('Wakasek Bidang Kesiswaan',$arrayDisJab) ? '' : 'none' }}" </div>
+                            <div class="text"> <i class="fa fa-check" style="display : {{ in_array('Wakasek Bidang Kesiswaan',$arrayDisJab) ? '' : 'none' }}" </div>
                         </td>
                         {{-- <td>
                             8. ........................
-                            <div style="font-size:5px!important;border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px">  </div>
+                            <div class="text">  </div>
                         </td> --}}
                         @php
                             // $arrayDisJab[] = 'tes'; 
@@ -188,7 +196,7 @@
                                 'Wakasek Bidang Kesiswaan',
                                 'Wakasek Bidang Hub. DU/DI',
                                 'Wakasek Bidang Sarana Prasarana',
-                                'Bendahara',
+                                'Bidang Kurikulum',
                             ];
 
                            foreach ($arrayDisJab as $key => $valjob) {
@@ -206,10 +214,10 @@
                             8. 
                             @if ($jabatan_tidak_ditemukan)
                                 {{$jabatanExist}}
-                                <div style="font-size:5px!important;border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"><i class="fa fa-check"></i></div>
+                                <div class="text"><i class="fa fa-check"></i></div>
                             @else
                             ........................
-                                <div style="font-size:5px!important;border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px">  </div>
+                                <div class="text">  </div>
                             @endif
                         </td>
                     </tr>
@@ -230,25 +238,25 @@
                     <tr>
                         <td style="width: 20%">
                             1. TKP
-                            <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px">
+                            <div class="text2">
                                 <i class="fa fa-check" style="display : {{ in_array('TKP',$arr_kpk) ? '' : 'none' }}"></i> 
                             </div>
                         </td>
                         <td>
                             4. TOI
-                            <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px">
+                            <div class="text2">
                                 <i class="fa fa-check" style="display : {{ in_array('TOI',$arr_kpk) ? '' : 'none' }}"></i> 
                             </div>
                         </td>
                         <td style="width: 20%">
                             7. DPIB
-                            <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px">
+                            <div class="text2">
                                 <i class="fa fa-check" style="display : {{ in_array('DPIB',$arr_kpk) ? '' : 'none' }}"></i> 
                             </div>
                         </td>
                         <td>
                             10. TKJ
-                            <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px">
+                            <div class="text2">
                                 <i class="fa fa-check" style="display : {{ in_array('TKJ',$arr_kpk) ? '' : 'none' }}"></i> 
                             </div>
                         </td>
@@ -256,19 +264,19 @@
                     <tr>
                         <td style="width: 20%">
                             2. TP
-                            <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px">
+                            <div class="text2">
                                 <i class="fa fa-check" style="display : {{ in_array('TP',$arr_kpk) ? '' : 'none' }}"></i> 
                             </div>
                         </td>
                         <td>
                             5. SIJA
-                            <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px">
+                            <div class="text2">
                                 <i class="fa fa-check" style="display : {{ in_array('SIJA',$arr_kpk) ? '' : 'none' }}"></i> 
                             </div>
                         </td>
                         <td style="width: 20%">
                             8. TKR
-                            <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px">
+                            <div class="text2">
                                 <i class="fa fa-check" style="display : {{ in_array('TKR',$arr_kpk) ? '' : 'none' }}"></i> 
                             </div>
                         </td>
@@ -276,19 +284,19 @@
                     <tr>
                         <td style="width: 20%">
                             3. TFLM
-                            <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px">
+                            <div class="text2">
                                 <i class="fa fa-check" style="display : {{ in_array('TFLM',$arr_kpk) ? '' : 'none' }}"></i> 
                             </div>
                         </td>
                         <td>
                             6. DKV
-                            <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px">
+                            <div class="text2">
                                 <i class="fa fa-check" style="display : {{ in_array('DKV',$arr_kpk) ? '' : 'none' }}"></i> 
                             </div>
                         </td>
                         <td>
                             9. RPL
-                            <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px">
+                            <div class="text2">
                                 <i class="fa fa-check" style="display : {{ in_array('RPL',$arr_kpk) ? '' : 'none' }}"></i> 
                             </div>
                         </td>
@@ -361,7 +369,7 @@
                     <tr>
                         @for ($i = 0; $i < 9; $i += 4)
                             <td class="instruction-column">
-                                <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"> <i class="fa fa-check" style="display : {{ in_array($intruksi[$i],$arr_in) ? '' : 'none' }}"></i> </div>
+                                <div class="text2"> <i class="fa fa-check" style="display : {{ in_array($intruksi[$i],$arr_in) ? '' : 'none' }}"></i> </div>
                                 {{ $intruksi[$i] }}
                             </td>
                         @endfor
@@ -369,7 +377,7 @@
                     <tr>
                         @for ($i = 1; $i < 9; $i += 4)
                             <td class="instruction-column">
-                                <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"> <i class="fa fa-check" style="display : {{ in_array($intruksi[$i],$arr_in) ? '' : 'none' }}"></i> </div>
+                                <div class="text2"> <i class="fa fa-check" style="display : {{ in_array($intruksi[$i],$arr_in) ? '' : 'none' }}"></i> </div>
                                 {{ $intruksi[$i] }}
                             </td>
                         @endfor
@@ -377,7 +385,7 @@
                     <tr>
                         @for ($i = 2; $i < 9; $i += 4)
                             <td class="instruction-column">
-                                <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"> <i class="fa fa-check" style="display : {{ in_array($intruksi[$i],$arr_in) ? '' : 'none' }}"></i> </div>
+                                <div class="text2"> <i class="fa fa-check" style="display : {{ in_array($intruksi[$i],$arr_in) ? '' : 'none' }}"></i> </div>
                                 {{ $intruksi[$i] }}
                             </td>
                         @endfor
@@ -385,7 +393,7 @@
                     <tr>
                         @for ($i = 3; $i < 9; $i += 4)
                             <td class="instruction-column">
-                                <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"> <i class="fa fa-check" style="display : {{ in_array($intruksi[$i],$arr_in) ? '' : 'none' }}"></i> </div>
+                                <div class="text2"> <i class="fa fa-check" style="display : {{ in_array($intruksi[$i],$arr_in) ? '' : 'none' }}"></i> </div>
                                 {{ $intruksi[$i] }}
                             </td>
                         @endfor
@@ -393,7 +401,7 @@
                     <tr>
                         @for ($i = 4; $i < 9; $i += 4)
                             <td class="instruction-column">
-                                <div style="border: 2px solid black;width:20px;height:20px;float:left;margin-right:5px"> <i class="fa fa-check" style="display : {{ in_array($intruksi[$i],$arr_in) ? '' : 'none' }}"></i> </div>
+                                <div class="text2"> <i class="fa fa-check" style="display : {{ in_array($intruksi[$i],$arr_in) ? '' : 'none' }}"></i> </div>
                                 {{ $intruksi[$i] }}
                             </td>
                         @endfor

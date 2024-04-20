@@ -68,6 +68,8 @@
                     @enderror
                 </div>
             </div>
+
+            
             <div class="col-sm-4" style="padding-top: 10px; padding-bottom:10px">
                 <div class="form-group mb-3">
                     <label for="name"></label> <br>
@@ -106,6 +108,7 @@
               <tr>
                 <th style="vertical-align: middle; text-align:center;">No.</th>
                 <th style="vertical-align: middle; text-align:center;">No. SUrat</th>
+                <th style="vertical-align: middle; text-align:center;">Tanggal Surat</th>
                 <th style="vertical-align: middle; text-align:center;">Tanggal Diterima</th>
                 {{-- <th style="vertical-align: middle; text-align:center;">Disposisi Jabatan</th>
                 <th style="vertical-align: middle; text-align:center;">Assign Tugas</th> --}}
@@ -119,6 +122,7 @@
                   <tr>
                       <td style="text-align: center">{{ $loop->iteration }}</td>
                       <td>{{ $item->no_surat }}</td>
+                      <td> {{ \Carbon\Carbon::parse($item->tgl_surat)->translatedFormat('d F Y') }}</td>
                       <td> {{ \Carbon\Carbon::parse($item->diterima_tgl)->translatedFormat('d F Y') }}</td>
                       {{-- <td>
                         @php

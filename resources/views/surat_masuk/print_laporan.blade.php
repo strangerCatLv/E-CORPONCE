@@ -78,6 +78,7 @@
       <tr>
         <th  class="huruf">No.</th>
         <th  class="huruf">No. Surat</th>
+        <th  class="huruf">Tanggal Surat</th>
         <th  class="huruf">Tanggal Diterima</th>
         {{-- <th  class="huruf">Disposisi Jabatan</th>
         <th  class="huruf">Assign Tugas</th> --}}
@@ -91,6 +92,7 @@
           <tr>
               <td  style="text-align: center;border: 1px solid black;  font-size:12px;">{{ $loop->iteration }}</td>
               <td  class="isi">{{ $item->no_surat }}</td>
+              <td  class="isi"> {{ \Carbon\Carbon::parse($item->tgl_surat)->translatedFormat('d F Y') }}</td>
               <td  class="isi"> {{ \Carbon\Carbon::parse($item->diterima_tgl)->translatedFormat('d F Y') }}</td>
               {{-- <td  class="isi">
                 @php

@@ -103,35 +103,30 @@
                         <label>Jabatan</label>
                         <select class="form-control" name="jabatan">
                             <option disabled selected>Pilih Jabatan</option>
-                                <option value="Ketua Tim Penjamin Mutu Pendidikan Sekolah (TPMPS)">Ketua Tim Penjamin Mutu Pendidikan Sekolah (TPMPS)</option>
-                                <option value="Wakasek Bidang Akademik">Wakasek Bidang Akademik</option>
-                                <option value="Wakasek Bidang Kesiswaan">Wakasek Bidang Kesiswaan</option>
-                                <option value="Wakasek Bidang Sarana Prasarana">Wakasek Bidang Sarana Prasarana</option>
-                                <option value="Wakasek Bidang Hub. DU/DI">Wakasek Bidang Hub. DU/DI</option>
-                                <option value="Bidang Kurikulum">Bidang Kurikulum</option>
-                                <option value="Bursa Kerja Khusus (BKK)">Bursa Kerja Khusus (BKK)</option>
-                                <option value="Bidang PKL/Magang">Bidang PKL/Magang</option>
-                                <option value="Staf Bidang Tertentu">Staf Bidang Tertentu</option>
-                                <option value="Koordinator Bidang Tertentu">Koordinator Bidang Tertentu</option>
-                                <option value="Kepala Kompetensi Keahlian">Kepala Kompetensi Keahlian</option>
-                                <option value="Bidang Kesiswaan">Bidang Kesiswaan</option>
-                                <option value="Bidang Sarana Prasarana">Bidang Sarana Prasarana</option>
-                                <option value="Arsiparis Ahli Muda">Arsiparis Ahli Muda</option>
-                                <option value="Pengadministrasi Kepegawaian">Pengadministrasi Kepegawaian</option>
-                                <option value="Pengadministrasi Keuangan">Pengadministrasi Keuangan</option>
-                                <option value="Pengadministrasi Kesiswaan">Pengadministrasi Kesiswaan</option>
-                                <option value="Pengadministrasi Kurikulum">Pengadministrasi Kurikulum</option>
-                                <option value="Pengadministrasi Hub. DU/Di">Pengadministrasi Hub. DU/Di</option>
-                                <option value="Pengadministrasi Persuratan">Pengadministrasi Persuratan</option>
-                                <option value="Pengadministrasi Perpustakaan">Pengadministrasi Perpustakaan</option>
-                                <option value="Pengelola Data/Operator DAPODIK">Pengelola Data/Operator DAPODIK</option>
-                                <option value="Sarana Prasarana">Sarana Prasarana</option>
-                                <option value="Pengelola UKS dan Resepsionis">Pengelola UKS dan Resepsionis</option>
-                                <option value="Pustakawan">Pustakawan</option>
-                                <option value="Teknisi/Toolman">Teknisi/Toolman</option>
-                                <option value="Satuan Pengaman">Satuan Pengaman</option>
-                                <option value="Petugas Logistik">Petugas Logistik</option>
-                                <option value="Driver">Driver</option>
+                            <option value="Ketua Tim Penjamin Mutu Pendidikan Sekolah (TPMPS)">Ketua Tim Penjamin Mutu Pendidikan Sekolah (TPMPS)</option>
+                            <option value="Wakasek Bidang Akademik">Wakasek Bidang Akademik</option>
+                            <option value="Wakasek Bidang Kesiswaan">Wakasek Bidang Kesiswaan</option>
+                            <option value="Wakasek Bidang Sarana Prasarana">Wakasek Bidang Sarana Prasarana</option>
+                            <option value="Wakasek Bidang Hub. DU/DI">Wakasek Bidang Hub. DU/DI</option>
+                            <option value="Bidang Kurikulum">Bidang Kurikulum</option>
+                            <option value="Ketua PKG">Ketua PKG</option>
+                            <option value="Bursa Kerja Khusus (BKK)">Bursa Kerja Khusus (BKK)</option>
+                            <option value="Bidang PKL/Magang">Bidang PKL/Magang</option>
+                            <option value="Bidang Kesiswaan">Bidang Kesiswaan</option>
+                            <option value="Bidang Mutu">Bidang Mutu</option>
+                            <option value="Bidang Persuratan">Bidang Persuratan</option>
+                            <option value="Bidang Sarana Prasarana">Bidang Sarana Prasarana</option>
+                            <option value="Kepala Kompetensi Keahlian">Kepala Kompetensi Keahlian</option>
+                            <option value="Arsiparis Ahli Muda">Arsiparis Ahli Muda</option>
+                            <option value="Pengadministrasi Perpustakaan">Pengadministrasi Perpustakaan</option>
+                            <option value="Pengelola Data/Operator DAPODIK">Pengelola Data/Operator DAPODIK</option>
+                            <option value="Sarana Prasarana">Sarana Prasarana</option>
+                            <option value="Pengelola UKS dan Resepsionis">Pengelola UKS dan Resepsionis</option>
+                            <option value="Pustakawan">Pustakawan</option>
+                            <option value="Teknisi/Toolman">Teknisi/Toolman</option>
+                            <option value="Satuan Pengaman">Satuan Pengaman</option>
+                            <option value="Petugas Logistik">Petugas Logistik</option>
+                            <option value="Driver">Driver</option>
                         </select>
                         @error('jabatan')
                             <span class="invalid-feedback" role="alert">
