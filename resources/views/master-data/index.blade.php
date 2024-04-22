@@ -86,7 +86,7 @@
 <div class="row mt-4">
     <div class="col-lg-12 col-md-6">
         <div class="row">
-            @if(auth()->user()->can('departement-list'))
+            {{-- @if(auth()->user()->can('departement-list'))
             <div class="col-md-4 col-sm-6 col-12 p-1" onclick="location.href='{{ route('departements.index') }}';">
                 <div class="info-box bg-gradient-info master-data">
                     <span class="info-box-icon" style="background-color:#da241b; "><i class="fas fa-building text-white"></i></span>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             </div>
-            @endif
+            @endif --}}
 
             @if(auth()->user()->can('user-list'))
             <div class="col-md-4 col-sm-6 col-12 p-1" onclick="location.href='{{ route('users.index') }}';">

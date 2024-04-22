@@ -124,8 +124,8 @@ class UserController extends Controller
             'email'   => 'required|unique:users,email,'.$id,
             'avatar' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg',
             'role' => 'required',
-            'nip' => 'required',
-            // 'jabatan' => 'required',
+            'nip' => 'nullable',
+            'jabatan' => 'nullable',
         ]);
 
         $user = User::findOrFail($id);

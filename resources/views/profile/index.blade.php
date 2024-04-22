@@ -240,7 +240,7 @@
                       <div class="form-group mb-3">
                           <label for="name">Name</label>
                           <input type="text" class="form-control @error('name') is-invalid @enderror" id="name"
-                              name="name" value="{{ old('name') ?? $user->name }}" placeholder="Enter name">
+                              name="name" value="{{ old('name') ?? $user->name }}" placeholder="Enter name" required>
                           @error('name')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
@@ -252,7 +252,7 @@
                           <label for="username">Username</label>
                           <input type="text" class="form-control @error('username') is-invalid @enderror"
                               id="username" name="username" value="{{ old('username') ?? $user->username }}"
-                              placeholder="Enter username">
+                              placeholder="Enter username" required>
                           @error('username')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
@@ -263,7 +263,7 @@
                       <div class="form-group mb-3">
                           <label for="email">Email address</label>
                           <input type="email" class="form-control @error('email') is-invalid @enderror" id="email"
-                              name="email" value="{{ old('email') ?? $user->email }}" placeholder="Enter email">
+                              name="email" value="{{ old('email') ?? $user->email }}" placeholder="Enter email" required>
                           @error('email')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
@@ -316,7 +316,7 @@
                       <div class="form-group mb-3">
                           <label for="password">Old Password</label>
                           <input type="password" class="form-control @error('password') is-invalid @enderror"
-                              id="password" name="password" value="{{ old('password') }}" placeholder="Password">
+                              id="password" name="password" value="{{ old('password') }}" placeholder="Password" required>
                           @error('password')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>
@@ -328,7 +328,7 @@
                           <label for="new_password">New Password</label>
                           <input type="password" class="form-control @error('new_password') is-invalid @enderror"
                               id="new_password" name="new_password" value="{{ old('new_password') }}"
-                              placeholder="New Password">
+                              placeholder="New Password" required>
                           @error('new_password')
                           <span class="invalid-feedback" role="alert">
                               <strong>{{ $message }}</strong>

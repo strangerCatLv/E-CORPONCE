@@ -26,7 +26,7 @@
             margin-bottom: 3px;
         }
         *{
-            font-size: 12px;
+            font-size: 13px;
             font-family: 'Times New Roman';
         }
     </style>
@@ -50,10 +50,10 @@
                     <b style="font-size:18px">
                         {{ $kop->nama_sekolah }}
                     </b><br>
-                    <span style="font-size: 11px; ">{{ $kop->alamat }}</span><br>
-                    <span style="font-size: 11px; ">telp. {{ $kop->telp }} Fax. +622518665558</span><br>
-                    <span style="font-size: 11px; ">e_mail: <a href="mailto:{{$kop->email}}" style="color: #006eff;font-size: 11px;">{{$kop->email}}</a> website: <a href="{{$kop->website}}" style="color: #006eff;font-size: 11px;">{{$kop->website}}</a></span><br>
-                    <span style="font-size: 11px; ">CIBINONG-16913</span>
+                    <span style="font-size: 12px; ">{{ $kop->alamat }}</span>
+                    <span style="font-size: 12px; "> - telp. {{ $kop->telp }} Fax. +622518665558</span><br>
+                    <span style="font-size: 12px; ">e_mail: <a href="mailto:{{$kop->email}}" style="color: #006eff;font-size: 11px;">{{$kop->email}}</a> website: <a href="{{$kop->website}}" style="color: #006eff;font-size: 11px;">{{$kop->website}}</a></span><br>
+                    <span style="font-size: 12px; ">CIBINONG-16913</span>
                 </center>
             </td>
         </tr>
@@ -66,7 +66,7 @@
     <span >Kepala Sekolah Menengah Kejuruan (SMK) Negeri 1 Cibinong Kabupaten Bogor dengan ini:</span>
     <br>   
     <center>
-        <b style="margin-top: 20px;font-size:18px;  display: block;">MEMERINTAHKAN</b>
+        <b style="margin-top: 10px;font-size:18px;  display: block; margin-bottom: 10px;">MEMERINTAHKAN</b>
     </center>
     <table class="table" border="0">
         @php
