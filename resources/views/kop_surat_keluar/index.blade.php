@@ -201,49 +201,49 @@
                         <div class="form-group mb-3">
                             <label for="avatar" style="float: left">Logo</label>
                             <div class="input-group">
-                                <input type="file" class="form-control" id="logo_sekolah" value="{{ $kop->logo_sekolah }}" name="logo_sekolah">
+                                <input type="file" class="form-control" id="logo_sekolah" value="{{ $kop->logo_sekolah }}" name="logo_sekolah" required>
                             </div>
                         </div>
                         <div class="form-group mb-3">
                             <label for="avatar" style="float: left">Nama Sekolah</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" id="nama_sekolah" value="{{ $kop->nama_sekolah }}" name="nama_sekolah">
+                                <input type="text" class="form-control" id="nama_sekolah" value="{{ $kop->nama_sekolah }}" name="nama_sekolah" required>
                             </div>
                         </div>
                         <div class="form-group mb-3">
                             <label for="avatar" style="float: left">Website</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" id="website" value="{{ $kop->website }}" name="website">
+                                <input type="text" class="form-control" id="website" value="{{ $kop->website }}" name="website" required>
                             </div>
                         </div>
                         <div class="form-group mb-3">
                             <label for="avatar" style="float: left">Email</label>
                             <div class="input-group">
-                                <input type="email" class="form-control" id="email" value="{{ $kop->email }}" name="email">
+                                <input type="email" class="form-control" id="email" value="{{ $kop->email }}" name="email" required>
                             </div>
                         </div>
                         <div class="form-group mb-3">
                             <label for="avatar" style="float: left">Telp.</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" id="telp" value="{{ $kop->telp }}" name="telp">
+                                <input type="text" class="form-control" id="telp" value="{{ $kop->telp }}" name="telp" required>
                             </div>
                         </div>
                         <div class="form-group mb-3">
                             <label for="avatar" style="float: left">Kepala Sekolah</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" id="kepala_sekolah" value="{{ $kop->kepala_sekolah }}" name="kepala_sekolah">
+                                <input type="text" class="form-control" id="kepala_sekolah" value="{{ $kop->kepala_sekolah }}" name="kepala_sekolah" required>
                             </div>
                         </div>
                         <div class="form-group mb-3">
                             <label for="avatar" style="float: left">NIP Kepala Sekolah</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" id="nip_kepala_sekolah" value="{{ $kop->nip_kepala_sekolah }}" name="nip_kepala_sekolah">
+                                <input type="text" class="form-control" id="nip_kepala_sekolah" value="{{ $kop->nip_kepala_sekolah }}" name="nip_kepala_sekolah" required>
                             </div>
                         </div>
                         <div class="form-group mb-3">
                             <label for="avatar" style="float: left">Alamat Sekolah</label>
                             <div class="input-group">
-                              <textarea name="alamat" class="form-control" id="" cols="30" rows="10">{{ $kop->alamat }}</textarea>
+                              <textarea name="alamat" class="form-control" id="" cols="30" rows="10" required>{{ $kop->alamat }}</textarea>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary" style="float: right">Simpan</button>

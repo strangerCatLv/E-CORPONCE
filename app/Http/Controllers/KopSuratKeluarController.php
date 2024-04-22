@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\KopSuratKeluar;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class KopSuratKeluarController extends Controller
 {

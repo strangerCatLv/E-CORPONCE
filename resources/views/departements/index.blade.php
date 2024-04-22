@@ -89,12 +89,12 @@
                                             </a>
                                             @endcan
 
-                                            @can('departement-delete')
+                                            {{-- @can('departement-delete')
                                             <a href="#" class="btn btn-danger f-12" onclick="modalDelete('Departement', '{{ $departement->name }}', 'departements/' + {{ $departement->id }}, '/departements/')">
                                                 <i class="far fa-trash-alt"></i>
                                                 Delete
                                             </a>
-                                            @endcan
+                                            @endcan --}}
                                         </div>
                                     </td>
                                     @endif

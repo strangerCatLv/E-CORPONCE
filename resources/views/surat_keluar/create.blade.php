@@ -310,6 +310,7 @@
 
                 <div class="card-footer bg-gray1" style="border-radius:0px 0px 10px 10px;">
                     <button type="submit" class="btn btn-success btn-footer">Simpan</button>
+                    {{-- <a href="{{ route('users.index') }}" class="btn btn-secondary btn-footer">Batal</a> --}}
                 </div>
             </form>
         </div>
