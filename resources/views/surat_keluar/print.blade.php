@@ -26,7 +26,7 @@
             margin-bottom: 3px;
         }
         *{
-            font-size: 13px;
+            font-size: 14px;
             font-family: 'Times New Roman';
         }
     </style>

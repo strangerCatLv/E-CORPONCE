@@ -43,7 +43,7 @@
         <tr>
             <td style="width: 10%;background-color:none">
                 <center>
-                    <img src="{{ asset('img/kop_surat/'.$kop->logo) }}" alt="" style="width: 70px; margin-bottom: 30px;" >
+                    <img src="{{ asset('img/kop_surat/'.$kop->logo) }}" alt="" style="width: 80px; margin-bottom: 0px!important;padding-bottom:30px;" >
                 </center>
             </td>
             <td>

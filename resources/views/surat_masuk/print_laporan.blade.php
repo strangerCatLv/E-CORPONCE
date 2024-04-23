@@ -46,7 +46,7 @@
         }
 
         .kop{
-          font-size: 12px; 
+          font-size: 13px; 
         }
     </style>
   </head>
@@ -55,17 +55,17 @@
         <tr>
             <td style="width: 100px">
                 <center>
-                    <img src="{{ asset('img/kop_surat/'.$kop->logo ) }}" alt="" style="width: 70px">
+                    <img src="{{ asset('img/kop_surat/'.$kop->logo ) }}" alt="" style="width: 100px">
                 </center>
             </td>
             
-            <td  style="padding-left: 50px;">
+            <td  style="padding-left: 20px;">
                 <center>
                     <b >
                         {{ $kop->nama_sekolah }}
                     </b><br>
-                    <h4 class="kop">{{ $kop->alamat }}<br>
-                    telp. {{ $kop->telp }} Fax. +622518665558<br>
+                    <h4 class="kop">{{ $kop->alamat }}
+                    - telp. {{ $kop->telp }} Fax. +622518665558<br>
                     e_mail: <a href="mailto:{{$kop->email}}" style="color: #006eff;font-size: 11px;">{{$kop->email}}</a> website: <a href="{{$kop->website}}" style="color: #006eff;font-size: 11px;">{{$kop->website}}</a><br>
                     CIBINONG-16913</h4>
                 </center>
