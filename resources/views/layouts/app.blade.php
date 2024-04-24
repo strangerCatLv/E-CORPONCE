@@ -25,6 +25,12 @@
         .jarak-button{
             margin-right: 5px;
         }
+        .loader {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
     </style>
     </head>
 
