@@ -107,6 +107,7 @@
                         </td>
                         <td>{{ $item->instansi_pengirim }}</td>
                         <td>{{ $item->perihal }}</td>
+                        {{-- <td>{{ $item->kepala_konsentrasi_keahlian}}</td> --}}
                         <td>
                             @php
                                 $pegawaiDisposisi = \App\Models\DisposisiPegawai::where('id_surat',$item->id)->get(); 

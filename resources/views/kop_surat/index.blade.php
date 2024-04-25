@@ -201,7 +201,7 @@
                         <div class="form-group mb-3">
                             <label for="avatar" style="float: left">Logo</label>
                             <div class="input-group">
-                                <input type="file" class="form-control" id="logo_sekolah" value="{{ $kop->logo_sekolah }}" name="logo_sekolah" required>
+                                <input type="file" class="form-control" id="logo_sekolah" value="{{ $kop->logo_sekolah }}" name="logo_sekolah" >
                             </div>
                         </div>
                         <div class="form-group mb-3">

@@ -109,7 +109,7 @@
             </div>
             @endif
 
-            @if(Auth::user()->getRoleNames()[0] == 'Superadmin' || Auth::user()->getRoleNames()[0] == 'Kepala Sekolah')
+            @if(Auth::user()->getRoleNames()[0] == 'Superadmin' || Auth::user()->getRoleNames()[0] == 'Kepala Sekolah' || Auth::user()->getRoleNames()[0] == 'TU Umum' )
             <div class="col-md-6 col-sm-6 col-12 p-1" >
                 <div class="info-box bg-gradient-info">
                     <img src="img/pegawai.png" alt="" width="300px" height="180px" class="gambar" >

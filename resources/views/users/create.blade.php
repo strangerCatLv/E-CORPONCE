@@ -39,9 +39,6 @@
 
 
                 <div class="card-body">
-
-                   
-
                     <div class="form-group mb-3">
                         <label for="name">NIP</label>
                         <input type="number" class="form-control @error('nip') is-invalid @enderror" id="nip" name="nip" value="{{ old('nip') }}"  placeholder="Enter nip">
